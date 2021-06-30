@@ -3,7 +3,8 @@ import PropType from "prop-types";
 
 class UserForm extends Component {
     
-    onSubmmit(e){
+    onSubmit(e){
+        console.log("hello")
         e.preventDefault();
         const node = this.refs.userName;
         const userName = node.value;
@@ -13,7 +14,7 @@ class UserForm extends Component {
 
     render(){
         return(
-            <form onSubmmit={this.onSubmmit.bind(this)}>
+            <form onSubmit={this.onSubmit.bind(this)}>
                 <div className="form-group">
                     <input 
                     type="text"

@@ -7,13 +7,14 @@ class UserList extends Component{
     
     
     render(){
+        console.log(this.props.users);
         return(
             <ul>
                 {
                     this.props.users.map(user => {
                         return (
                             <User
-                                user={user}
+                                userName={user}
                                 key={user.id}                                
                             />
                         )

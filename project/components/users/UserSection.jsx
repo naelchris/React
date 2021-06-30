@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import PropType from "prop-types";
+import UserList from './UserList.jsx';
+import UserForm from './UserForm.jsx';
 
 class UserSection extends Component {
 
